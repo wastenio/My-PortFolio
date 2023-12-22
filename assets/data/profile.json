@@ -41,6 +41,13 @@
       "Comunicação"
     ]
   },
+  "professionalEducation": [
+    {
+      "name": "UniNassau",
+      "course": "Analise e Desenvolvimento de Sistema",
+      "period": "3º Semestre"
+    }
+  ],
   "languages": [
     "Português BR",
     "Inglês (básico)",

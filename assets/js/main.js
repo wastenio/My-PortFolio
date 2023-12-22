@@ -1,6 +1,6 @@
 
 //Função para manipulação dos dados do HTML
-function updateProfileInfo(profileData){
+function updateProfileInfo(profileData) {
     const photo = document.getElementById(`profile.photo`)
     photo.src = profileData.photo
     photo.alt = profileData.name
@@ -23,23 +23,28 @@ function updateProfileInfo(profileData){
     email.href = `mailto:${profileData.email}`
 }
 
-function updateSoftSkills(profileData){
+function updateSoftSkills(profileData) {
     const softSkills = document.getElementById(`profile.skills.softSkills`)
 
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join(``)
 }
 
-function updateHardSkills(profileData){
+function updateHardSkills(profileData) {
     const hardSkills = document.getElementById(`profile.skills.hardSkills`)
     hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join(``)
 }
 
-function updateLanguages(profileData){
+function updateEducation(profileData) {
+    console.log(profileData)
+}
+
+
+function updateLanguages(profileData) {
     const languages = document.getElementById(`profile.languages`)
     languages.innerHTML = profileData.languages.map(language => `<li>${language}</li>`).join(``)
 }
 
-function updateProjeto(profileData){
+function updateProjeto(profileData) {
     const projetos = document.getElementById(`profile.projeto`)
     projetos.innerHTML = profileData.projeto.map(project => {
         return `
@@ -51,7 +56,7 @@ function updateProjeto(profileData){
     }).join(``)
 }
 
-function updateExperience(profileData){
+function updateExperience(profileData) {
     const professionalExperience = document.getElementById(`profile.experience`)
     professionalExperience.innerHTML = profileData.professionalExperience.map(experience => {
         return `
@@ -70,6 +75,7 @@ function updateExperience(profileData){
     updateProfileInfo(profileData)
     updateSoftSkills(profileData)
     updateHardSkills(profileData)
+    updateEducation(profileData)
     updateLanguages(profileData)
     updateProjeto(profileData)
     updateExperience(profileData)
