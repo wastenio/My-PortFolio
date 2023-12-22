@@ -35,7 +35,16 @@ function updateHardSkills(profileData) {
 }
 
 function updateEducation(profileData) {
-    console.log(profileData)
+    const professionalEducation = document.getElementById(`profile.education`)
+    professionalEducation.innerHTML = profileData.professionalEducation.map(education => 
+        `
+            <li>
+                <h3 class="title">${education.name}</h3>
+                <p class"course">${education.course}</p>
+                <p class="period">${education.period}</p>
+            </li>
+        `
+        ).join(``)
 }
 
 
