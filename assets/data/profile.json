@@ -73,6 +73,12 @@
       "name": "Plataforma Spotify",
       "url": "https://github.com/wastenio/clonando-spotify",
       "github": true
+    },
+    {
+      "name": "CardapioDigital Dev",
+      "url": "https://cardapio-digital-sujeito-programador.vercel.app/",
+      "repository": "https://github.com/wastenio/CardapioDigital_Sujeito_Programador",
+      "github": true
     }
   ],
   "professionalExperience": [
