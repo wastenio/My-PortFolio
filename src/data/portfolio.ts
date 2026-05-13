@@ -1,3 +1,5 @@
+export const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const profile = {
   name: "Wastênio da Silva Rocha",
   role: "Software Engineer | Backend / Full Stack",
@@ -6,7 +8,7 @@ export const profile = {
   phone: "(85) 98514-4865",
   linkedin: "https://www.linkedin.com/in/wastenio-da-silva-rocha",
   github: "https://github.com/wastenio",
-  photo: "/assets/img/my-photo.jpg",
+  photo: `${siteBasePath}/assets/img/my-photo.jpg`,
   headline:
     "Desenvolvo APIs, sistemas corporativos e aplicações full stack com Java, Spring Boot, Python, Django, React, SQL e foco em ambientes críticos.",
   summary:

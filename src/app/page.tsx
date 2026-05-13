@@ -10,12 +10,17 @@ import {
   Send,
 } from "lucide-react";
 import Image from "next/image";
-import { certifications, education, experiences, profile, projects, skillGroups } from "@/data/portfolio";
+import { certifications, education, experiences, profile, projects, siteBasePath, skillGroups } from "@/data/portfolio";
 
 export default function Home() {
   return (
     <main>
-      <section className="hero-section">
+      <section
+        className="hero-section"
+        style={{
+          backgroundImage: `linear-gradient(135deg, rgba(16, 32, 51, 0.92), rgba(15, 118, 110, 0.82)), url("${siteBasePath}/assets/img/background.svg")`,
+        }}
+      >
         <div className="container hero-grid">
           <div className="hero-copy">
             <span className="eyebrow">

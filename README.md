@@ -111,6 +111,30 @@ npm run lint
 
 Executa a verificação de qualidade do código.
 
+## Deploy no GitHub Pages
+
+O projeto está configurado para deploy estático no GitHub Pages usando GitHub Actions.
+
+Ao enviar alterações para a branch `main`, o workflow em:
+
+```txt
+.github/workflows/deploy.yml
+```
+
+executa o build do Next.js, gera a pasta `out` e publica o conteúdo no GitHub Pages.
+
+Como este repositório é publicado em uma URL de projeto, os assets são preparados com o caminho base:
+
+```txt
+/My-PortFolio
+```
+
+No GitHub, a configuração de Pages deve usar a origem:
+
+```txt
+GitHub Actions
+```
+
 ## Aprendizados aplicados
 
 Este projeto representa uma etapa importante da minha evolução profissional, pois une conhecimentos de frontend moderno, organização de código, boas práticas de componentização e preocupação com apresentação profissional.

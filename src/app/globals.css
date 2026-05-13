@@ -76,9 +76,6 @@ a {
   display: flex;
   align-items: center;
   padding: 72px 0 48px;
-  background:
-    linear-gradient(135deg, rgba(16, 32, 51, 0.92), rgba(15, 118, 110, 0.82)),
-    url("/assets/img/background.svg");
   background-color: #102033;
   background-position: center;
   background-size: cover;
