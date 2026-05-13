@@ -1,60 +1,118 @@
-# Meu PortFolio
+# Portfólio Profissional | Wastenio da S. Rocha
 
-PortFolio criado através de um curso de JS ministrado pela equipe DIO.
+Este projeto é a reestruturação do meu portfólio pessoal, originalmente criado a partir de um curso introdutório de desenvolvimento web. A primeira versão cumpriu bem o papel de estudo, mas ainda carregava muitas características do template do curso.
 
-## Introdução
+Com o objetivo de transformar esse projeto em um portfólio próprio, profissional e mais alinhado ao mercado, decidi migrar a base antiga para uma stack mais atual, utilizando Next.js, React, TypeScript e Tailwind CSS.
 
-Nesse projeto tive a oportunidade de conhecer um pouco mais sobre a linguagem JS desde o básico ate o avançado.
+## Objetivo da reestruturação
 
-### Pré-requisitos
+A proposta desta nova versão é apresentar minha trajetória, experiências, tecnologias e projetos de forma mais clara, moderna e profissional.
 
-VsCode
-NodeJS
+Durante a migração, busquei aplicar conhecimentos práticos em:
 
-### Guia de instalação
-Para que o projeto rode em seu computador necessita que seja realizado a instalação de alguns APP, segue abaixo lista de APP necessario:
+- Organização de projeto com Next.js e App Router.
+- Criação de componentes reutilizáveis com React.
+- Tipagem de dados com TypeScript.
+- Estilização responsiva com Tailwind CSS.
+- Separação entre conteúdo, layout e apresentação.
+- Melhoria de SEO, performance e estrutura para deploy.
+- Criação de uma experiência visual mais própria, sem aparência de template de curso.
 
-- Etapas para instalar:
+## Por que migrar o projeto?
 
-Baixar o VsCode e instalar na sua maquina.
+O portfólio anterior foi importante para praticar HTML, CSS e JavaScript, mas eu queria que a nova versão demonstrasse melhor minha evolução como desenvolvedor.
+
+A migração para tecnologias mais atuais permite que o projeto reflita melhor as stacks que venho estudando e utilizando, além de tornar o portfólio mais preparado para divulgação profissional e apresentação dos meus projetos reais.
+
+## Stack utilizada
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React
+- Node.js
+- npm
+
+## Estrutura principal
+
+```txt
+src/
+  app/
+    layout.tsx
+    page.tsx
+    globals.css
+  data/
+    portfolio.ts
+public/
+  assets/
 ```
-https://code.visualstudio.com/download
+
+## Onde editar o conteúdo
+
+Os dados principais do portfólio ficam centralizados em:
+
+```txt
+src/data/portfolio.ts
 ```
 
-Baixar o NodeJs e instalar na sua maquina.
-```
-https://nodejs.org/en
-```
+Nesse arquivo é possível atualizar:
 
-### Executando testes
+- Informações pessoais.
+- Links de contato.
+- Tecnologias.
+- Projetos.
+- Experiências profissionais.
+- Formação.
 
-Com o seu VsCode aberto será necessario realizar alguns comando para que possa rodar o portfolio em seu navedor.
+## Como executar localmente
 
-```
-npm install -g http-server
-```
+Instale as dependências:
 
-Através desse comando, você irá instalar um servidor local em seu computador para que possa abrir o projeto em seu navegador.
-
-- Executando o servidor local.
-
-Após realizar a instalação do servidor local na sua maquina, executar o comando abaixo dentro do terminal do seu VsCode para poder abrir o projeto no navegador.
-
-```
-http-server.cmd ./
+```bash
+npm install
 ```
 
-Comando acima ele chamado o servidor local dentro da pasta atual do projeto.
+Execute o projeto em modo desenvolvimento:
 
-### Tecnologias usadas
-![NodeJS](https://img.shields.io/badge/node.js*6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-* ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-* ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+```bash
+npm run dev
+```
 
-### Autores / Colaboradores
-* **Renan JPaula** - *Professor do curso JS pela DIO*
-* **Wastenio S Rocha** - *Desenvolvedor do projeto*
+Acesse no navegador:
 
+```txt
+http://localhost:3000
+```
+
+## Scripts disponíveis
+
+```bash
+npm run dev
+```
+
+Inicia o ambiente de desenvolvimento.
+
+```bash
+npm run build
+```
+
+Gera a versão otimizada de produção.
+
+```bash
+npm run start
+```
+
+Executa a aplicação após o build.
+
+```bash
+npm run lint
+```
+
+Executa a verificação de qualidade do código.
+
+## Aprendizados aplicados
+
+Este projeto representa uma etapa importante da minha evolução profissional, pois une conhecimentos de frontend moderno, organização de código, boas práticas de componentização e preocupação com apresentação profissional.
+
+Além de divulgar meus projetos, este portfólio também funciona como uma demonstração prática da minha capacidade de evoluir um projeto simples para uma aplicação mais estruturada, atualizada e preparada para uso real.
