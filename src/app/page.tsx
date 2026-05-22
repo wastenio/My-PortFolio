@@ -1,7 +1,9 @@
 import {
   ArrowUpRight,
+  Award,
   BriefcaseBusiness,
   Code2,
+  FileText,
   Github,
   Linkedin,
   Mail,
@@ -162,10 +164,23 @@ export default function Home() {
               </div>
             ))}
             <div className="certifications">
-              <h3>Cursos e idiomas</h3>
+              <h3>Certificações e cursos</h3>
               <ul>
                 {certifications.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item.title}>
+                    <Award size={16} aria-hidden />
+                    <div>
+                      <strong>{item.title}</strong>
+                      <span>{item.issuer}</span>
+                      {item.credentialId && <small>ID: {item.credentialId}</small>}
+                      {item.validUntil && <small>Válido até: {item.validUntil}</small>}
+                      {item.fileUrl && (
+                        <a href={item.fileUrl} target="_blank" rel="noreferrer">
+                          Abrir certificado <FileText size={14} aria-hidden />
+                        </a>
+                      )}
+                    </div>
+                  </li>
                 ))}
               </ul>
             </div>

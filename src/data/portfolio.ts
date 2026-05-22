@@ -110,7 +110,30 @@ export const education = [
 ];
 
 export const certifications = [
-  "Bootcamp WEX - Desenvolvimento .NET e QA",
-  "Formação React Developer",
-  "Inglês técnico para leitura e interpretação de documentação",
+  {
+    title: "OCNA Routing & Switching",
+    issuer: "Omada",
+    credentialId: "839D269C895541A0",
+    validUntil: "20 maio 2029",
+    fileUrl: `${siteBasePath}/certificates/omada-ocna-routing-switching.pdf`,
+  },
+  {
+    title: "OCNA Wireless",
+    issuer: "Omada",
+    credentialId: "B36CE434963B4A45",
+    validUntil: "13 maio 2029",
+    fileUrl: `${siteBasePath}/certificates/omada-ocna-wireless.pdf`,
+  },
+  {
+    title: "Bootcamp WEX - Desenvolvimento .NET e QA",
+    issuer: "DIO",
+  },
+  {
+    title: "Formação React Developer",
+    issuer: "DIO",
+  },
+  {
+    title: "Inglês técnico",
+    issuer: "Leitura e interpretação de documentação",
+  },
 ];
